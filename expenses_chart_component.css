@@ -1,0 +1,163 @@
+:root {
+  --borderRadB: 15px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "DM Sans", sans-serif;
+}
+body {
+  background: hsl(27, 66%, 92%);
+}
+header {
+  width: 100%;
+  border-radius: var(--borderRadB);
+  background: hsl(10, 79%, 65%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  margin-bottom: 20px;
+  color: white;
+  font-weight: 400;
+}
+header div {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: flex-start;
+}
+header p {
+  margin-bottom: 7px;
+  font-weight: 400;
+}
+p {
+  font-size: 0.7em;
+}
+h1 {
+  font-size: 1.2em;
+  font-weight: 400;
+}
+header img {
+  width: 15%;
+}
+section {
+  padding: 25px;
+  width: 100%;
+  border-radius: var(--borderRadB);
+  background: hsl(33, 100%, 98%);
+}
+h2 {
+  color: hsl(25, 47%, 15%);
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+.chart {
+  border-bottom: 2px solid hsl(27, 66%, 92%);
+  width: 100%;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin-bottom: 20px;
+}
+.column {
+  width: calc(100% / 7);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+.chart .column:nth-child(1) .data {
+  height: 47px;
+}
+.chart .column:nth-child(2) .data {
+  height: 104px;
+}
+.chart .column:nth-child(3) .data {
+  height: 150px;
+  background: hsl(186, 34%, 60%);
+}
+.chart .column:nth-child(4) .data {
+  height: 93px;
+}
+.chart .column:nth-child(5) .data {
+  height: 70px;
+}
+.chart .column:nth-child(6) .data {
+  height: 121px;
+}
+.chart .column:nth-child(7) .data {
+  height: 82px;
+}
+.amount {
+  width: 90%;
+  padding: 5px 0;
+  color: white;
+  border-radius: 3px;
+  background: hsl(25, 47%, 15%);
+  font-size: 0.7em;
+  margin-bottom: 4px;
+  text-align: center;
+  visibility: hidden;
+}
+.data {
+  width: 75%;
+  border-radius: 3px;
+  background: hsl(10, 79%, 65%);
+}
+.day {
+  font-size: 0.55em;
+  font-weight: 400;
+  color: hsl(28, 10%, 53%);
+  margin-top: 4px;
+}
+.resume > div {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.resume p {
+  color: hsl(28, 10%, 53%);
+}
+h3 {
+  font-size: 1.9em;
+  color: hsl(25, 47%, 15%);
+  width: 60%;
+}
+.resume div div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.resume span {
+  color: hsl(25, 47%, 15%);
+  font-size: 0.7em;
+  font-weight: 700;
+}
+
+@media only screen and (min-width:900px) {
+  main {
+    min-width: 400px;
+    width: 40%;
+    max-width: 900px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  } 
+}
+
+@media only screen and (max-width:899px) {
+  main {
+    min-width: 300px;
+    padding: 0 5%;
+    width: 100%;
+    max-width: 400px;
+    margin: 50px auto;
+  }
+}

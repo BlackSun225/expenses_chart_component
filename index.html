@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en-CI">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="expenses_chart_component.css" />
+    <link rel="icon" type="image/x-icon" href="images/favicon-32x32.png" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <title>Expenses chart component main</title>
+  </head>
+  <body>
+    <main>
+      <header>
+        <div>
+          <p>My balance</p><h1>$921.48</h1>
+        </div>
+        <img alt="logo" src="images/logo.svg" />
+      </header>
+      <section>
+        <h2>Spending - Last 7 days</h2>
+        <div class="chart">
+          <div class="column">
+            <div class="amount"></div>
+            <div class="data"></div>
+            <div class="day">mon</div>
+          </div>
+          <div class="column">
+            <div class="amount"></div>
+            <div class="data"></div>
+            <div class="day">tue</div>
+          </div>
+          <div class="column">
+            <div class="amount">$52.36</div>
+            <div class="data"></div>
+            <div class="day">wed</div>
+          </div>
+          <div class="column">
+            <div class="amount">$31.07</div>
+            <div class="data"></div>
+            <div class="day">thu</div>
+          </div>
+          <div class="column">
+            <div class="amount"></div>
+            <div class="data"></div>
+            <div class="day">fri</div>
+          </div>
+          <div class="column">
+            <div class="amount"></div>
+            <div class="data"></div>
+            <div class="day">sat</div>
+          </div>
+          <div class="column">
+            <div class="amount"></div>
+            <div class="data"></div>
+            <div class="day">sun</div>
+          </div>
+        </div>
+        <div class="resume">
+            <p>Total this month</p>
+          <div>
+            <h3>$478.33</h3>
+            <div>
+              <span>+2.4%</span><p>from last month</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="expenses_chart_component.js"></script>
+  </body>
+</html>
